@@ -1,0 +1,41 @@
+{% load static%}<link rel="stylesheet" href="{% static 'base/css/site.css'%}">
+<meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Habib's Site</title>
+</head>
+<body>
+    <h1 class="head1"><i>Apt Joy</i></h1>
+    <nav>
+        <div class="navar">
+            <a href="{% url 'index' %}"><i class="material-icons">home</i></a>
+            <a href=""><i class="material-icons">tag</i></a>
+            
+            <a href=""><i class=material-icons>search</i></a>
+            <a href="{% url 'account_login' %}"><i class="material-icons">login</i></a>
+            <a href="{% url 'account_logout' %}"><i class="material-icons">logout</i></a>
+        </div>
+        <form action="/" method="get" class="form-inline mt-2 mt-md-0">
+            <input id="q" name="q" value="{{ request.GET.q }}" class="for" type="text" placeholder="Search..." aria-label="Search">
+            <button class="fo" type="submit">Search</button><!--here-->
+        </form>
+    </nav>
+    <p>You're logged in as <strong class ="loguser">{{user}}</strong></p>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+<footer class="footer">
+    <div>
+        <span>
+            Copyright Of Y. H. Ayomide
+        </span>
+    </div>
+</footer>
+</html>

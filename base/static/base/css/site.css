@@ -1,0 +1,131 @@
+body {
+    padding-top: none;
+    background-color: hsl(70,70%,90%);
+    font-family:sans-serif;
+}
+h1 {
+    color: green;
+    padding: 1rem;
+}
+.head1 {
+    font-size:2rem;
+}
+.bdy {
+    padding:none;
+    color:white;
+}
+.head3 {
+    color:rgb(70,70,70);
+}
+.head3 a {
+    text-decoration:none;
+}
+h5 a {
+    text-decoration:none;
+    color:green;
+    font-style:sans-serif;
+    font-size:1rem;
+}
+.footer {
+    text-align: center;
+    font-size: 10px;
+    padding:None;
+}
+.des {
+    text-indent:5px;
+    font-size:None;
+    font-family:sans-serif;
+    font-style:none;
+}
+.det {
+    text-indent:10px;
+    font-size:1rem;
+    font-family:serif;
+    font-style:none;
+    color:black;
+}
+.for {
+    height:2rem;
+    border-radius:10px;
+    border-color:hsl(0,68%,30%);
+}
+.fo {height:2rem;
+    border-radius:10px;
+    border-color:hsl(0,68%,30%);
+    background-color:hsl(150,100%,100%);
+}
+.form-control {
+    width: 12rem;
+    max-width:400px;
+    padding: 10px;
+    border-radius:5px;
+    border:1px solid gray;
+    height:2rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-width:1px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.Br {
+    border-radius:10px;
+    background-color:hsl(175,68%,50%);
+    border-color:hsl(0,0%,0%);
+}
+.button_f {
+    width:12rem;
+    border-radius:5px;
+    border:1px;
+    height:2rem;
+    background-color:hsl(70,60%,50%);
+    margin-left:auto;
+    margin-right:auto;
+}
+.card-body {
+    box-sizing:border-box;
+    border-radius:5px;
+}
+.card {
+    background-color:white;
+    border:1px solid gray;
+    border-radius:10px;
+    margin:5px;
+    padding:2px;
+}
+.navar {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:block;
+    background-color:hsl(70,60%,50%);
+    overflow:hidden;
+}
+.navar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    width:16%;
+}
+.navar a:hover {
+    background-color: green;
+    color: black;
+}
+.navar a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+.datetime {
+    font-size: 0.5rem;
+}
+.loguser {
+    color:green;
+}
+.button_l {
+    width:7rem;
+    border-radius:5px;
+    border:1px;
+    height:2rem;
+    background-color:hsl(70,60%,50%);

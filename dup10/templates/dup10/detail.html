@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+    <div>
+        <div>
+            <h1>{{flower.title}}</h1>
+            <p class="det">{{flower.description}}</p>
+            {% for tag in flower.tags.all %}
+                <a href="#" class="card-link">{{ tag }}</a>
+            {% endfor %}
+            {% for tag in flower.tags.all %}
+                <a href="{% url 'tags' tag.slug %}" class="card-link">{{ tag }}</a> <!-- here -->
+            {% endfor %}
+
+
+        </div>
+    </div>
+{% endblock %}

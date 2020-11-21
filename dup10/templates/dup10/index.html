@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="card-columns"> <!-- here -->
+{% for flower in flowers %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"><a href = "{% url 'detail' flower.slug %}">{{ flower.title }}</a></h5> <p class="datetime">{{flower.added}}</p><!--here-->
+            <p class="card-text">{{ flower.description | truncatechars:100 }}</p> <!-- here -->
+            
+            <p>Category:<a href="#" class="card-link">{{ flower.category }}</a> <!-- here --></p>
+            {% if perms.hay_app01.change_flower %}
+                <a href="{% url 'edit' pk=flower.pk %}">Edit</a>
+            {% endif %}
+        {% if perms.hay_app01.change_flower %}
+            <a href="{% url 'delete' pk=flower.pk %}" class="card-link">Delete</a>
+        {% endif %}
+
+       </div>
+    </div>
+{% endfor %}
+<a href="flowe/create/">Comment</a>
+</div>
+{% endblock %}
